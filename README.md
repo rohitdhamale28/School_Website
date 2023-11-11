@@ -1,1 +1,1 @@
-#pratice School Website
+#practice School Website
