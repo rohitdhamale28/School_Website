@@ -1,0 +1,287 @@
+/* @charset "UTF-8";
+html {
+  font: 400 1em/1.33 "Times New Roman";
+  background-color: #a7a1a1;
+}
+
+body {
+  padding-bottom: 3em;
+}
+
+.profile {
+  background: url("https://assets.codepen.io/406785/Ansel_Adams_and_camera.jpg?format=auto") center 30%;
+  box-shadow: inset 0 0 5em 1em #000;
+  height: 50vh;
+  background-size: cover;
+}
+
+.profile {
+    margin-top: 100px;
+  width: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: auto;
+}
+
+hr {
+  overflow: visible;
+  padding: 0;
+  border: none;
+  border-top: medium double #333;
+  color: #333;
+  text-align: center;
+}
+
+hr:after {
+  content: "§";
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: #cccccc;
+}
+
+article {
+  color: #ccc;
+}
+
+article {
+  margin-left: 50%;
+  position: relative;
+  max-width: 66em;
+}
+
+header {
+  text-align: center;
+  padding: 0 2em;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+h1 .headline-1,
+h1 .headline-2 {
+  line-height: 1;
+}
+h1 .headline-1 {
+  font-size: 10.5vw;
+}
+h1 .headline-2 {
+  font-size: 8vw;
+}
+
+.subheading {
+  color: #ccc;
+  font-size: 1.5625em;
+  max-width: 25em;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 1.5em;
+}
+
+section {
+  column-width: 14em;
+  column-gap: 1.33em;
+  padding: 0 3em;
+}
+section p:first-of-type:first-letter {
+  float: left;
+  font-size: 7em;
+  line-height: 1;
+  margin-top: -0.2em;
+  margin-bottom: -0.2em;
+  margin-right: 0.1em;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1.33em;
+  vertical-align: middle;
+}
+
+blockquote {
+  border-left: 0.5em solid #ccc;
+  font-size: 2em;
+  padding: 0.5em;
+  line-height: 1.5;
+  margin-left: 0;
+  margin-right: 0;
+  position: absolute;
+  right: 100%;
+  top: 70vh;
+  width: 9em;
+  background: #191919;
+}
+blockquote::before, blockquote::after {
+  color: #ccc;
+  font-size: 1.25em;
+  line-height: 0;
+}
+blockquote::before {
+  content: open-quote;
+}
+blockquote::after {
+  content: close-quote;
+} */
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Sacramento");
+html {
+  font-size: 14.5px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.45em;
+  background-color: #f0f0f0;
+  color: #404646;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  margin: 1.6rem 0.8rem;
+  margin-top: 150px;
+}
+
+.grid-container {
+  margin: auto;
+  display: grid;
+  grid-gap: 1.1312rem;
+  grid-template-columns: repeat(auto-fit, 12.8rem);
+  grid-auto-rows: 12.8rem;
+  grid-auto-flow: dense;
+  justify-content: center;
+  max-width: 75em;
+}
+
+.card {
+  grid-row: auto/span 1;
+  grid-column: auto/span 1;
+  background-color: white;
+  box-shadow: 1px 3px 3px rgba(0, 10, 20, 0.06);
+}
+.card h1, .card h2, .card h3, .card h4, .card p {
+  margin-top: 0;
+  font-weight: normal;
+}
+.card__image {
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  display: flex;
+}
+.card__image img {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__side-by-side {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+.card__side-by-side--m {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.card__side-by-side--m img {
+  min-height: auto;
+}
+.card__content {
+  padding: 1.6rem;
+}
+.card__button {
+  margin: 1.6rem 0;
+  text-align: center;
+  padding: 0.8rem 1.6rem;
+  background: none;
+  border: 0.5px solid #777;
+  border-radius: 2px;
+}
+.card__button:hover {
+  border-color: #d099a0;
+}
+.card--featured {
+  grid-row: auto/span 3;
+  grid-column: auto/span 2;
+}
+.card--2x {
+  grid-row: auto/span 2;
+  grid-column: auto/span 2;
+}
+.card--vertical {
+  grid-row: auto/span 2;
+}
+.card--horizontal {
+  grid-column: auto/span 2;
+}
+.card--frameless {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.padding-large {
+  padding: 3.2rem;
+}
+.padding-large--l {
+  padding: 1.6rem;
+}
+
+.big-script {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  font-family: "Sacramento", sans-serif;
+  font-size: 4.3em;
+  line-height: 1.15em;
+  text-align: center;
+}
+.big-script p {
+  margin: 0;
+}
+
+@media (max-width: 413px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+  }
+
+  .card {
+    min-height: 12.8rem;
+  }
+}
+@media (min-width: 627px) {
+  .grid-container {
+    grid-gap: 1.6rem;
+  }
+
+  .card__side-by-side--m {
+    flex-flow: row nowrap;
+  }
+  .card__side-by-side--m img {
+    min-height: 100%;
+  }
+  .card--featured {
+    grid-row: auto/span 2;
+    grid-column: 1/-1;
+  }
+}
+@media (min-width: 836px) {
+  .padding-large--l {
+    padding: 3.2rem;
+  }
+}
